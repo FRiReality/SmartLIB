@@ -1,0 +1,15 @@
+{
+    "name": "Brandon/smart-lib",
+    "authors": [
+        {
+            "name": "brandon-xprodeur",
+            "email": "brandon@live.Fr"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Core\\": "SmartLIB/"
+      }
+    },
+    "require": {}
+}
