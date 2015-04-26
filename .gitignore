@@ -1,5 +1,5 @@
 vendor/
-.ida\
+.ida/
 
 # Windows image file caches
 Thumbs.db
