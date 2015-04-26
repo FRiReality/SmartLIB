@@ -2,17 +2,17 @@
 namespace Core;
 
 define('DS', DIRECTORY_SEPARATOR); // Change \ par /
-define('DIR', __DIR__); // Le dossier du fichier
-define('HTTP_HOST', $_SERVER['HTTP_HOST']); // Contenu de l'en-tête Host
-define('REQUEST_URI', $_SERVER['REQUEST_URI']); // L'URI qui a été fourni pour accéder à cette page
+define('DIR', __DIR__); // Folder file
+define('HTTP_HOST', $_SERVER['HTTP_HOST']); // Content file url
+define('REQUEST_URI', $_SERVER['REQUEST_URI']); // L'URI access URL
 define('URL', 'http://'. HTTP_HOST . REQUEST_URI); // URL complete
 
 
 class Config{
     static public $config = [
         'library' => [
-            'name_site' => '',
-            'description' => '',
+            'name_site' => '', // Site name
+            'description' => '', // Site description
         ],
         'connections' => [
             'mysql' => [
