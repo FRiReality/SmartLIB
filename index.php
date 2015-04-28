@@ -1,6 +1,7 @@
 <?php
 require 'vendor/autoload.php';
-
+session_start();
+$ma_variable = 'Ceci est une phrase de test :)';
 /******************************************************************/
 /******************************************************************/
 
@@ -13,16 +14,25 @@ $debug = new Core\Debug();
 
 /* DefaultSite */
 $site = new Core\DefaultSite();
-$site->linkCSS(URL, 'style/css/style.css'); // URL = URL complete du site
+/**
+ * @params URL = URL complete du site
+ * @params chemin du fichier CSS/JS
+ */
+$site->linkCSS(URL, 'assets/css/style.css');
+$site->linkJS(URL, 'assets/js/jquery.js');
 
 /* Database */
 $db = new Core\Database();
 
 /* Debug */
-$ma_variable = 'Mon debug fonctionne';
 $debug::dd($ma_variable, FALSE);
+$debug::dd($_SESSION, FALSE);
 
-/* Form */
+/* Session */
+$session = new \Core\Session();
+$session->setFlash($ma_variable);
+
+  /* Form */
 $form = new Core\Form();
 $form->method('POST'); // méthode du formulaire
 $form->target('index.php');// cible du formulaire
