@@ -38,7 +38,6 @@ $session = new \Core\Session();
 
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
-    $cache->
     $cache->write('mon_test', $ma_variable);
     $cache->delete('mon_test');
 
@@ -49,4 +48,3 @@ $form = new Core\Form();
     $form->target('index.php');
     $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
     $form->build();
-
