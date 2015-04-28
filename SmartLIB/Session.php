@@ -4,6 +4,10 @@ namespace Core;
 
 class Session{
 
+    /**
+     * @param $message
+     * @param string $type
+     */
     public static function setFlash($message,$type = 'success'){
         $_SESSION['flash'] = array(
             'message' => $message,
@@ -11,6 +15,9 @@ class Session{
         );
     }
 
+    /**
+     * @return string
+     */
     public static function flash(){
         if(isset($_SESSION['flash']['message'])){
             $html = '<div class="alert alert-'.$_SESSION['flash']['type'].'"><p>'.$_SESSION['flash']['message'].'</p></div>';
@@ -19,10 +26,18 @@ class Session{
         }
     }
 
+    /**
+     * @param $key
+     * @param $value
+     */
     public function write($key,$value){
         $_SESSION[$key] = $value;
     }
 
+    /**
+     * @param null $key
+     * @return bool
+     */
     public function read($key = null){
         if($key){
             if(isset($_SESSION[$key])){
@@ -35,6 +50,10 @@ class Session{
         }
     }
 
+    /**
+     * @param $key
+     * @return bool
+     */
     public function user($key){
         if($this->read('User')){
             if(isset($this->read('User')->$key)){
@@ -45,6 +64,10 @@ class Session{
         }
         return false;
     }
+
+    /**
+     * @return bool
+     */
     public static function islogged(){
         if (isset($_SESSION['User'])) {
             return true;
