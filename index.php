@@ -13,14 +13,15 @@ $app->run();
 /* Debug */
 $debug = new Core\Debug();
 
-/* DefaultSite */
-$site = new Core\DefaultSite();
+/* Utils */
+$site = new Core\Utils();
 /**
  * @params URL = URL complete du site
  * @params chemin du fichier CSS/JS
  */
 $site->linkCSS(URL, 'assets/css/style.css');
 $site->linkJS(URL, 'assets/js/jquery.js');
+$site->tva('140', '20');
 
 /* Database */
 $db = new Core\Database('localhost', 'root', '', 'boutique');
@@ -40,6 +41,3 @@ $form->target('index.php');// cible du formulaire
 $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
 $form->draw(); // Génere un formulaire
 
-
-
- number_format(1000 * 1.196,2,',',' ');

@@ -1,7 +1,7 @@
 <?php
 namespace Core;
 
-Class DefaultSite{
+Class Utils{
 
 
     public function linkCSS($link, $css){
