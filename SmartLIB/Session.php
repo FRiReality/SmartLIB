@@ -50,26 +50,13 @@ class Session{
         }
     }
 
-    /**
-     * @param $key
-     * @return bool
-     */
-    public function user($key){
-        if($this->read('User')){
-            if(isset($this->read('User')->$key)){
-                return $this->read('User')->$key;
-            } else{
-                return false;
-            }
-        }
-        return false;
-    }
 
     /**
+     * @param $session
      * @return bool
      */
-    public static function islogged(){
-        if (isset($_SESSION['User'])) {
+    public static function islogged($session){
+        if (isset($_SESSION[$session])) {
             return true;
         }else{
             header('location: ../');

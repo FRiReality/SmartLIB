@@ -27,22 +27,25 @@ $site = new Core\Utils();
 /* Database */
 $db = new Core\Database('localhost', 'root', '', 'boutique');
     $db->query('SELECT * FROM products');
-
+    $db->query('INSERT INTO products (name) VALUES (:name)', ['name' => 'mon nom']);
+    $db->delete('DELETE FROM products WHERE id=1');
 
 
 /* Session */
 $session = new \Core\Session();
     $session->setFlash($ma_variable);
 
+
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
     $cache->write('mon_test', $ma_variable);
     $cache->delete('mon_test');
 
+
 /* Form */
 $form = new Core\Form();
-    $form->method('POST'); // méthode du formulaire
-    $form->target('index.php');// cible du formulaire
+    $form->method('POST');
+    $form->target('index.php');
     $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
-    $form->draw(); // Génere un formulaire
+    $form->build();
 

@@ -66,9 +66,9 @@ class Form{
         $this->target = $target;
     }
     /**
-     * Draw form
+     * Build form
      */
-    public function draw(){
+    public function build(){
         $this->createForm();
     }
     /**

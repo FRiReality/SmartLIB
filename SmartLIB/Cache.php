@@ -5,8 +5,9 @@ namespace Core;
 class Cache{
 
     public $dirname;	// Folder cache
-    public $duration;   // Durée de vie du cache EN MINUTES
-    public $buffer;		// Buffer (utilisé pour les méthodes start/end)
+    public $duration;   // Duration life cache (time minute)
+    public $buffer;
+    public $exist_cache = 'Le cache existe deja.';
 
     /**
      * @param string $dirname Dossier contenant le cache
@@ -16,7 +17,11 @@ class Cache{
         $this->dirname = $dirname;
         $this->duration = $duration;
 
-        //mkdir($this->dirname);
+        if(!file_exists($this->dirname)){
+            mkdir($this->dirname);
+        }else{
+            echo 'Le dossier' . $this->dirname . ' existe deja';
+        }
 
     }
 
@@ -55,9 +60,6 @@ class Cache{
         }
     }
 
-    /**
-     *
-     */
     public function clear(){
         $files = glob($this->dirname.'/*');
         foreach( $files as $file ) {

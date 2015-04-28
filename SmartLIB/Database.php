@@ -48,4 +48,10 @@ class Database{
         return $req->fetchAll(PDO::FETCH_OBJ);
     }
 
+    /**
+     * @param $sql
+     */
+    public function delete($sql){
+        $req = $this->db->query($sql);
+    }
 }
