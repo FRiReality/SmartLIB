@@ -9,49 +9,40 @@ $ma_variable = 'Ceci est une phrase de test :)';
 
 /* Bootstrap */
 $app = new Core\Bootstrap();
-$app->run();
+    $app->run();
 
 
 /* Debug */
 $debug = new Core\Debug();
-
+    $debug::dd($ma_variable, FALSE);
+    $debug::dd($_SESSION, FALSE);
 
 /* Utils */
 $site = new Core\Utils();
-
-
-/**
- * @params price * 20
- */
-$site->tva('130.34');
-
-
-/**
- * @params URL = URL complete du site
- * @params chemin du fichier CSS/JS
- */
-$site->linkCSS(URL, 'assets/css/style.css');
-$site->linkJS(URL, 'assets/js/jquery.js');
+    $site->tva('130.34');
+    $site->linkCSS(URL, 'assets/css/style.css');
+    $site->linkJS(URL, 'assets/js/jquery.js');
 
 
 /* Database */
 $db = new Core\Database('localhost', 'root', '', 'boutique');
+    $db->query('SELECT * FROM products');
 
-
-/* Debug */
-$debug::dd($ma_variable, FALSE);
-$debug::dd($_SESSION, FALSE);
 
 
 /* Session */
 $session = new \Core\Session();
-$session->setFlash($ma_variable);
+    $session->setFlash($ma_variable);
 
+/* Cache */
+$cache = new \Core\Cache('Cache', '30');
+    $cache->write('mon_test', $ma_variable);
+    $cache->delete('mon_test');
 
-  /* Form */
+/* Form */
 $form = new Core\Form();
-$form->method('POST'); // méthode du formulaire
-$form->target('index.php');// cible du formulaire
-$form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
-$form->draw(); // Génere un formulaire
+    $form->method('POST'); // méthode du formulaire
+    $form->target('index.php');// cible du formulaire
+    $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
+    $form->draw(); // Génere un formulaire
 
