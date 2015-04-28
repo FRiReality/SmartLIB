@@ -4,8 +4,10 @@ namespace Core;
 class Bootstrap{
     private static $_instance = null;
 
-
     public function __construct(){
+        if (!isset($_SESSION)) {
+            session_start();
+        }
     }
 
     public static function getInstance(){

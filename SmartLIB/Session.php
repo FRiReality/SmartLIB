@@ -4,12 +4,6 @@ namespace Core;
 
 class Session{
 
-    public function __construct(){
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-    }
-
     public static function setFlash($message,$type = 'success'){
         $_SESSION['flash'] = array(
             'message' => $message,
