@@ -23,7 +23,7 @@ $site->linkCSS(URL, 'assets/css/style.css');
 $site->linkJS(URL, 'assets/js/jquery.js');
 
 /* Database */
-$db = new Core\Database();
+$db = new Core\Database('localhost', 'root', '', 'boutique');
 
 /* Debug */
 $debug::dd($ma_variable, FALSE);
@@ -39,3 +39,7 @@ $form->method('POST'); // méthode du formulaire
 $form->target('index.php');// cible du formulaire
 $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
 $form->draw(); // Génere un formulaire
+
+
+
+ number_format(1000 * 1.196,2,',',' ');
