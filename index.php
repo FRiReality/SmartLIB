@@ -27,8 +27,8 @@ $site = new Core\Utils();
 /* Database */
 $db = new Core\Database('localhost', 'root', '', 'boutique');
     $db->query('SELECT * FROM products');
-    $db->query('INSERT INTO products (name) VALUES (:name)', ['name' => 'mon nom']);
-    $db->delete('DELETE FROM products WHERE id=1');
+    // $db->query();
+    //$db->delete();
 
 
 /* Session */
@@ -38,6 +38,7 @@ $session = new \Core\Session();
 
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
+    $cache->
     $cache->write('mon_test', $ma_variable);
     $cache->delete('mon_test');
 

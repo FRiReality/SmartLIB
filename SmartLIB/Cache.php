@@ -19,10 +19,7 @@ class Cache{
 
         if(!file_exists($this->dirname)){
             mkdir($this->dirname);
-        }else{
-            echo 'Le dossier' . $this->dirname . ' existe deja';
         }
-
     }
 
     /**
