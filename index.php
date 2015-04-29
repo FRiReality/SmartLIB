@@ -40,9 +40,10 @@ $session = new \Core\Session();
 
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
+    $cache->inc('composer.json', 'composer');
     $cache->write('mon_test', $ma_variable);
     $cache->delete('mon_test');
-
+    $cache->clear('mon_test');
 
 /* Form */
 $form = new Core\Form();
