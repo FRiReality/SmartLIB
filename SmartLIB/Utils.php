@@ -34,7 +34,7 @@ Class Utils{
 
     public function key(){
         if($this->key === 'za25tu54gh0e2a0c3e77'){
-            Session::setFlash('Veuillez mettre une cle unique pour votre application web?');
+            Session::flash('Veuillez mettre une cle unique pour votre application web?');
         }
         if(!empty($this->key)){
             var_dump($this->key);

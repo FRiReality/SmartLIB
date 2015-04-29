@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    border: 0;
+}
+
+.alert{
+    font-family: Arial;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    position: fixed;
+    text-align: center;
+    background: #c1c1c1;
+    color: #fff;
+}
+
+.alert-success{
+    border-top: solid 4px #678c37;
+    background: #99c141;
+}
+.alert-danger{
+    border-top: solid 4px #8f3b2e;
+    background: #c14239;
+}
+
+
+/*<div class="alert alert-'.$_SESSION['flash']['type'].'"><p></p></div>

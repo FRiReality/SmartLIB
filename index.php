@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="SmartLIB/Assets/style.css"/>
 <?php
 require 'vendor/autoload.php';
 
@@ -22,8 +23,8 @@ $debug = new Core\Debug();
 $site = new Core\Utils();
     $site->tva('130.34');
     $site->key();
-    $site->linkCSS(URL, 'assets/css/style.css');
-    $site->linkJS(URL, 'assets/js/jquery.js');
+    $site->linkCSS(URL, '');
+    $site->linkJS(URL, '');
 
 
 /* Database */
@@ -35,8 +36,9 @@ $db = new Core\Database('localhost', 'root', '', 'boutique');
 
 /* Session */
 $session = new \Core\Session();
-    $session->setFlash($ma_variable);
+    $session->setFlash($ma_variable, 'danger');
     $session->write('SmartLIB', $ma_variable);
+    $session->read($ma_variable);
 
 
 /* Cache */

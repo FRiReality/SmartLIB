@@ -13,8 +13,6 @@ class Session{
             'message' => $message,
             'type'    => $type
         );
-
-        echo  $_SESSION['flash']['message'];
     }
 
     /**
@@ -24,7 +22,7 @@ class Session{
         if(isset($_SESSION['flash']['message'])){
             $html = '<div class="alert alert-'.$_SESSION['flash']['type'].'"><p>'.$_SESSION['flash']['message'].'</p></div>';
             $_SESSION['flash'] = array();
-            return $html;
+            echo $html;
         }
     }
 
