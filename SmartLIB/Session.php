@@ -9,11 +9,12 @@ class Session{
      * @param string $type
      */
     public static function setFlash($message,$type = 'success'){
-        var_dump($_SESSION);
         $_SESSION['flash'] = array(
             'message' => $message,
             'type'    => $type
         );
+
+        self:Session::flash();
     }
 
     /**
