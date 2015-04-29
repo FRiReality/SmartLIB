@@ -1,5 +1,6 @@
-vendor/
-.ida
+.idea
+**/composer.phar
+vendor
 
 # Windows image file caches
 Thumbs.db

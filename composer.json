@@ -1,5 +1,10 @@
 {
-    "name": "Brandon/smart-lib",
+    "name": "Brandon/SmartLIB",
+    "description": "Library PHP simple & rapide",
+    "homepage": "http://github.com/brandon-xprodeur/SmartLIB/",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "brandon-xprodeur",

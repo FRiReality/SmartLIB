@@ -11,7 +11,6 @@ $ma_variable = 'Ceci est une phrase de test :)';
 /* Bootstrap */
 $app = new Core\Bootstrap();
     $app->run();
-    $app->key();
 
 /* Debug */
 $debug = new Core\Debug();
