@@ -24,5 +24,17 @@ class Bootstrap{
     public function run(){
         $inst = self::getInstance();
         include 'Configuration.php';
+
+        $this->verifSmartLIB();
+    }
+
+    public function verifSmartLIB(){
+        $configuration = Config::$config['connections']['mysql'];
+        if(
+            empty($configuration['name']) ||
+            empty($configuration['database'])
+        ){
+            Session::setFlash('Veuillez remplir tout les champs à la connexion à la base de donnee', 'danger');
+        }
     }
 }

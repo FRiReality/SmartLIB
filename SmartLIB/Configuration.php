@@ -3,9 +3,7 @@ namespace Core;
 
 define('DS', DIRECTORY_SEPARATOR); // Change \ par /
 define('DIR', __DIR__); // Folder file
-define('HTTP_HOST', $_SERVER['HTTP_HOST']); // Content file url
-define('REQUEST_URI', $_SERVER['REQUEST_URI']); // L'URI access URL
-define('URL', 'http://'. HTTP_HOST . REQUEST_URI); // URL complete
+define('URL', 'http://'. $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); // URL complete
 
 
 class Config{
@@ -19,8 +17,8 @@ class Config{
                 'driver' => 'mysql',
                 'host'   => 'localhost',
                 'name' => 'root',
-                'database' => '', // Database name table
-                'password' => '', // Database password
+                'database' => 'ff', // Database name table
+                'password' => 'ff', // Database password
                 'charset' => 'utf-8',
                 'collation' => 'utf8_unicode_ci',
                 'prefix'    => '',
