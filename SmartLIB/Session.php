@@ -11,8 +11,10 @@ class Session{
     public static function setFlash($message,$type = 'success'){
         $_SESSION['flash'] = array(
             'message' => $message,
-            'type' => $type
+            'type'    => $type
         );
+
+        echo  $_SESSION['flash']['message'];
     }
 
     /**
@@ -49,7 +51,6 @@ class Session{
             return $_SESSION;
         }
     }
-
 
     /**
      * @param $session

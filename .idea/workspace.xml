@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6b8450a-c7d6-4fc4-a37e-bc375695692d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmartLIB/Bootstrap.php" afterPath="$PROJECT_DIR$/SmartLIB/Bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmartLIB/Debug.php" afterPath="$PROJECT_DIR$/SmartLIB/Debug.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmartLIB/Session.php" afterPath="$PROJECT_DIR$/SmartLIB/Session.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartLIB/Database.php">
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmartLIB/Session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="1984">
-              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state vertical-scroll-proportion="-14.724138" vertical-offset="661" max-vertical-offset="2272">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -42,50 +44,20 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.5172415" vertical-offset="1010" max-vertical-offset="1760">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.965517" vertical-offset="142" max-vertical-offset="1824">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding>
-                <marker date="1430256431394" expanded="true" signature="658:680" placeholder="SELECT * FRO..products..." />
+                <marker date="1430295820249" expanded="true" signature="700:722" placeholder="SELECT * FRO..products..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="Debug.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SmartLIB/Debug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.795699" vertical-offset="0" max-vertical-offset="2272">
-              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartLIB/Bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="960">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartLIB/Utils.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="1216">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cache.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartLIB/Cache.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="3872">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.51648355" vertical-offset="232" max-vertical-offset="1440">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -99,16 +71,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SmartLIB/Bootstrap.php" />
         <option value="$PROJECT_DIR$/SmartLIB/DefaultSite.php" />
         <option value="$PROJECT_DIR$/SmartLIB/Utils.php" />
         <option value="$PROJECT_DIR$/Cache/salut" />
-        <option value="$PROJECT_DIR$/SmartLIB/Session.php" />
         <option value="$PROJECT_DIR$/SmartLIB/Database.php" />
         <option value="$PROJECT_DIR$/SmartLIB/Form.php" />
         <option value="$PROJECT_DIR$/SmartLIB/Cache.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/SmartLIB/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/SmartLIB/Session.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/SmartLIB/Debug.php" />
       </list>
     </option>
   </component>
@@ -312,7 +285,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1430256431394" expanded="true" signature="658:680" placeholder="SELECT * FRO..products..." />
+            <marker date="1430295820249" expanded="true" signature="700:722" placeholder="SELECT * FRO..products..." />
           </folding>
         </state>
       </provider>
@@ -337,35 +310,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="3872">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartLIB/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="3872">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2272">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartLIB/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.627451" vertical-offset="2688" max-vertical-offset="3936">
+        <state vertical-scroll-proportion="15.448276" vertical-offset="2688" max-vertical-offset="3936">
           <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartLIB/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50700283" vertical-offset="1494" max-vertical-offset="2240">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartLIB/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="1984">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartLIB/Utils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="1216">
+        <state vertical-scroll-proportion="-19.931034" vertical-offset="254" max-vertical-offset="1216">
           <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding />
         </state>
@@ -373,34 +348,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartLIB/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="960">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.1034483" vertical-offset="0" max-vertical-offset="1056">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartLIB/Cache.php">
+    <entry file="file://$PROJECT_DIR$/SmartLIB/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="3872">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.46153846" vertical-offset="1174" max-vertical-offset="1984">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartLIB/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.724138" vertical-offset="661" max-vertical-offset="2272">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.5172415" vertical-offset="1010" max-vertical-offset="1760">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.965517" vertical-offset="142" max-vertical-offset="1824">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
-            <marker date="1430256431394" expanded="true" signature="658:680" placeholder="SELECT * FRO..products..." />
+            <marker date="1430295820249" expanded="true" signature="700:722" placeholder="SELECT * FRO..products..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/SmartLIB/Debug.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.795699" vertical-offset="0" max-vertical-offset="2272">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.51648355" vertical-offset="232" max-vertical-offset="1440">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>

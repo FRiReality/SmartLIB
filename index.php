@@ -15,7 +15,8 @@ $app = new Core\Bootstrap();
 /* Debug */
 $debug = new Core\Debug();
     $debug::dd($ma_variable, FALSE);
-    $debug::dd($_SESSION, FALSE);
+    $debug::pp($_SESSION, FALSE);
+    $debug::session($ma_variable, FALSE);
 
 /* Utils */
 $site = new Core\Utils();
@@ -34,6 +35,7 @@ $db = new Core\Database('localhost', 'root', '', 'boutique');
 /* Session */
 $session = new \Core\Session();
     $session->setFlash($ma_variable);
+    $session->write('SmartLIB', $ma_variable);
 
 
 /* Cache */
