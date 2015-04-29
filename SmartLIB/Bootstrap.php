@@ -3,7 +3,6 @@ namespace Core;
 
 class Bootstrap{
     private static $_instance = null;
-    public $key;
 
     public function __construct(){
         if (!isset($_SESSION)) {
@@ -24,7 +23,5 @@ class Bootstrap{
     public function run(){
         $inst = self::getInstance();
         include 'Configuration.php';
-
-        $this->verifSmartLIB();
     }
 }

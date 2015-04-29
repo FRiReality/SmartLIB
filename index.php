@@ -11,6 +11,7 @@ $ma_variable = 'Ceci est une phrase de test :)';
 /* Bootstrap */
 $app = new Core\Bootstrap();
     $app->run();
+    $app->key();
 
 /* Debug */
 $debug = new Core\Debug();
@@ -22,7 +23,6 @@ $debug = new Core\Debug();
 /* Utils */
 $site = new Core\Utils();
     $site->tva('130.34');
-    $site->key();
     $site->linkCSS(URL, '');
     $site->linkJS(URL, '');
 
@@ -36,7 +36,7 @@ $db = new Core\Database('localhost', 'root', '', 'boutique');
 
 /* Session */
 $session = new \Core\Session();
-    //$session->setFlash($ma_variable, 'success');
+    $session->setFlash($ma_variable, 'success');
     $session->write('SmartLIB', $ma_variable);
     $session->read($ma_variable);
 
