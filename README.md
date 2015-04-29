@@ -61,6 +61,7 @@ Si vous avez un souci avec une classe ou une fonction, hésitez pas à regarder/
 
 ##**Me contacter** ##
 <br/>
+-
 * Adresse mail : brandon-xprodeur@live.fr
 * Skype : brandon-xprodeur
 * Twitter : @brandonxprodeur
