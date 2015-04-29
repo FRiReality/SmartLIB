@@ -4,6 +4,7 @@ namespace Core;
 Class Utils{
 
     public $tva = 1.20;
+    public $key = 'za25tu54gh0e2a0c3e77';
 
 
     /**
@@ -29,5 +30,14 @@ Class Utils{
         $tva = $this->tva;
 
         echo number_format($price * $tva,2,',',' ');
+    }
+
+    public function key(){
+        if($this->key === 'za25tu54gh0e2a0c3e77'){
+            Session::setFlash('Veuillez mettre une cle unique pour votre application web?');
+        }
+        if(!empty($this->key)){
+            var_dump($this->key);
+        }
     }
 }

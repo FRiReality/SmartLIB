@@ -3,6 +3,7 @@ namespace Core;
 
 class Bootstrap{
     private static $_instance = null;
+    public $key;
 
     public function __construct(){
         if (!isset($_SESSION)) {
@@ -24,5 +25,4 @@ class Bootstrap{
         $inst = self::getInstance();
         include 'Configuration.php';
     }
-
 }
