@@ -14,14 +14,11 @@ $app = new Core\Bootstrap();
 
 /* Debug */
 $debug = new Core\Debug();
-    // $debug::dd($ma_variable, FALSE);
-    //$debug::pp($_SESSION, FALSE);
-    //$debug::session($ma_variable, FALSE);
 
 
 /* Utils */
 $site = new Core\Utils();
-    $site->tva('130.34');
+    $site->tva('220.34');
     $site->linkCSS(URL, '');
     $site->linkJS(URL, '');
 
@@ -42,7 +39,7 @@ $session = new \Core\Session();
 
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
-    $cache->inc('composer.json', 'composer');
+    // $cache->inc('composer.json', 'composer');
     $cache->write('mon_test', $ma_variable);
     $cache->delete('mon_test');
     $cache->clear('mon_test');
@@ -52,5 +49,5 @@ $cache = new \Core\Cache('Cache', '30');
 $form = new Core\Form();
     $form->method('POST');
     $form->target('index.php');
-    $form->input('text', 'salut','salut', ''); // 1 = Type | 2 = Name | 3 = Label
+    $form->input('text', 'name','Votre nom : ', ''); // 1 = Type | 2 = Name | 3 = Label
     $form->build();
