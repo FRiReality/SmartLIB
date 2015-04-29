@@ -36,7 +36,7 @@ $db = new Core\Database('localhost', 'root', '', 'boutique');
 
 /* Session */
 $session = new \Core\Session();
-    $session->setFlash($ma_variable, 'success');
+    //$session->setFlash($ma_variable, 'success');
     $session->write('SmartLIB', $ma_variable);
     $session->read($ma_variable);
 

@@ -31,7 +31,7 @@ class Database{
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
             ));
         }catch(PDOException $e){
-            die('<h1>Impossible de se connecter a la base de donnee</h1>');
+            Session::setFlash('<h1>Impossible de se connecter a la base de donnee</h1>');
         }
 
 

@@ -17,8 +17,8 @@ class Config{
                 'driver' => 'mysql',
                 'host'   => 'localhost',
                 'name' => 'root',
-                'database' => 'ff', // Database name table
-                'password' => 'ff', // Database password
+                'database' => '', // Database name table
+                'password' => '', // Database password
                 'charset' => 'utf-8',
                 'collation' => 'utf8_unicode_ci',
                 'prefix'    => '',
