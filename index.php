@@ -26,7 +26,6 @@ $site = new Core\Utils();
 /* Database */
 $db = new Core\Database('localhost', 'root', '', 'boutique');
     $db->query('SELECT * FROM products');
-    //$db->query();
     //$db->delete();
 
 
