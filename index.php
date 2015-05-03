@@ -14,6 +14,7 @@ $app = new Core\Bootstrap();
 
 /* Debug */
 $debug = new Core\Debug();
+$debug->all();
 
 
 /* Utils */
@@ -39,9 +40,9 @@ $session = new \Core\Session();
 /* Cache */
 $cache = new \Core\Cache('Cache', '30');
     // $cache->inc('composer.json', 'composer');
-    $cache->write('mon_test', $ma_variable);
-    $cache->delete('mon_test');
-    $cache->clear('mon_test');
+    //$cache->write('mon_test.php', $ma_variable);
+    //$cache->delete('mon_test');
+    //$cache->clear('mon_test');
 
 
 /* Form */

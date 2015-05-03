@@ -30,5 +30,4 @@ Class Utils{
         echo number_format($price * $tva,2,',',' ');
     }
 
-
 }

@@ -64,3 +64,7 @@ La class **Cache** pour moi est vraiment indispensable pour les très gros site 
 * **delete** *Permet de supprimer un fichier*  
 * **clear** *Permet de nettoyer le fichier(le vider)* 
 * **inc** *Permet de capturer un fichier et de le mettre en cache puis affichier le cache* 
+
+<br>
+## Class **Form** ##
+Cette class et avant tout une class qui nous facilite la tâche quand nous réalisons un formulaire.
