@@ -10,11 +10,11 @@ ___
 ##**Installation** ##
 <br/>
 
->Je comprend pas comment voulez-vous que je peux utilisé **SmartLIB** alors qu'il y à même pas de dossier **assets** pour mettre le style de notre site.
+>Je comprend pas, comment voulez-vous que je peux utilisé **SmartLIB** alors qu'il y à même pas de dossier **assets** pour mettre le style de notre site.
 <br/>
 C'est le but d'une librairie, vous importez simplement le dossier **SmartLIB** à la racine de votre projet et vous faite dans votre **index.php**
  
-    <?php require_once'SmartLIB/index.php';
+    <?php require_once'SmartLIB/index.php'; ?>
 
 
 tout simplement, maintenant vous avez installer la librairie, plus qu'a la configurer.
@@ -32,7 +32,7 @@ La librairie est vraiment simple à comprendre, tout d’abord dans mon dossier 
    - *Configuration.php*
 - *index.php*
 
-Donc vous l'aurez compris très simple, une ***index.php*** ou il y a toute les class qui sont appeler et un dossier ou il y a toute les class réalisé, ce qui nous interesse là c'est configurer notre librairie; donc nous allons ouvrir le fichier ***Configuration.php*** dans le dossier ***SmartLIB***.
+Une ***index.php*** ou il y a toute les class qui sont appeler et un dossier ou il y a toute les class réalisé, ce qui nous interesse là c'est configurer notre librairie; donc nous allons ouvrir le fichier ***Configuration.php*** dans le dossier ***SmartLIB***.
 <br/>
 Comme vous pouvez le voir il y quelques define(Ne vous en faite rien à toucher, c'est juste pour récupérer l'url de votre site et une class **Config** et une variable **$config** avec deux tableaux, le premier, **Library** qui nous permet de configurer notre librairie et **Connections** qui nous permet de ce connait à notre base de donnée.
 
