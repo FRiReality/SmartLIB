@@ -63,7 +63,13 @@ La class **Cache** pour moi est vraiment indispensable pour les très gros site 
 * **read** *Permet de lire un fichier*
 * **delete** *Permet de supprimer un fichier*  
 * **clear** *Permet de nettoyer le fichier(le vider)* 
-* **inc** *Permet de capturer un fichier et de le mettre en cache puis affichier le cache* 
+* **inc** *Permet de capturer un fichier et de le mettre en cache puis affichier le cache*
+
+<br>
+## Class **Log**
+La class **Log** est très utile quand vous n'activez pas les erreurs quand votre projet n'est en ligne.
+
+* **write** *Permet de créer un fichier et d'ajouter du contenu*
 
 <br>
 ## Class **Form** ##
