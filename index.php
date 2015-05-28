@@ -23,11 +23,13 @@ $site = new Core\Utils();
     $site->linkCSS(URL, '');
     $site->linkJS(URL, '');
 
+$log = new Core\Log();
+    $log->write('Je test mon système de log','Salut.php');
 
 /* Database */
-$db = new Core\Database('localhost', 'root', '', 'boutique');
+    $db = new Core\Database('localhost', 'root', '', 'boutique');
     $db->query('SELECT * FROM products');
-    //$db->delete();
+    $db->delete();
 
 
 /* Session */
