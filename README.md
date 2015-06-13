@@ -10,7 +10,7 @@ ___
 ##**Installation** ##
 <br/>
 
->Je comprend pas, comment voulez-vous que je peux utilisé **SmartLIB** alors qu'il y à même pas de dossier **assets** pour mettre le style de notre site.
+>Je comprend pas, comment voulez-vous que j'utilise **SmartLIB** alors qu'il y à même pas de dossier **assets** pour mettre le style de notre site.
 <br/>
 C'est le but d'une librairie, vous importez simplement le dossier **SmartLIB** à la racine de votre projet et vous faite dans votre **index.php**
  
