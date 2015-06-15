@@ -29,11 +29,11 @@ Class Utils{
 
         echo number_format($price * $tva,2,',',' ');
     }
-    
+
     /**
      * @param $length
      */
-    function str_random($length){
+    function random($length){
         $alphabet = "0123456789azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN";
         return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
     }
