@@ -3,7 +3,10 @@ ___
 ## Présentation de la librairie ##
 SmartLIB est une librairie PHP très simple à installer. Grâce à cette librairie vous pourrez réaliser un projet tel qu'un blog ou encore un portfolio en toute simplicité.
 
+![https://htmlpreview.github.io/?https://github.com/brandon-xprodeur/SmartLIB/index.html](http://i.imgur.com/HFzaMPu.png)
+
 #**Documentation**#
+[Visualiser la documentation](https://github.com/brandon-xprodeur/SmartLIB/wiki)
 ___
 
 
