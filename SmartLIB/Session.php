@@ -37,19 +37,17 @@ class Session{
     }
 
     /**
-     * @param null $key
-     * @return bool
+     * @param $key
      */
-    public function read($key = null){
-        if($key){
-            if(isset($_SESSION[$key])){
-                return $_SESSION[$key];
-            }else{
-                return false;
-            }
-        }else{
-            return $_SESSION;
-        }
+     public function read($key){
+         return isset($_SESSION[$key]) ? $_SESSION[$key] : null;
+     }
+
+     /**
+      * @param $key
+      */
+     public function delete($key){
+        unset($_SESSION[$key]);
     }
 
     /**
