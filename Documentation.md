@@ -24,21 +24,21 @@ Vous le s'avez tout comme moi, nous sommes obligé de debug notre site par momen
 ## Class **Utils** ##
 Cette class c'est ou il y aura des functions utiles comme pour appeler des fichiers css/js.
 
-* ** linkCSS ** *Permet d'appeler un fichier css*
-* ** linkJS ** *Permet d'appeler un fichier js*
-* ** tva ** *Permet de calculer un prix avec la tva*
-* ** random ** *Permet de générer une clé unique(chiffre et lettre)*
+* **linkCSS** *Permet d'appeler un fichier css*
+* **linkJS** *Permet d'appeler un fichier js*
+* **tva** *Permet de calculer un prix avec la tva*
+* **random** *Permet de générer une clé unique(chiffre et lettre)*
 
 <br>
 ## Class **Database** ##
 Grâce à cette class vous aurez juste à mettre vos identifiants et vous pourrez dès à présent l'utiliser.
 
 * **__construct** *Permet de vous connectez à votre base de donnée*
-* ** query** *Permet de récupérer et insérer des données*
-* ** delete ** *Permet de supprimer des données*
-* ** read ** *Permet de lire des données*
-* ** write ** *Permet d'écrire des données*
-* ** isLogged ** *Permet de s'avoir si il est enregistré*
+* **query** *Permet de récupérer et insérer des données*
+* **delete** *Permet de supprimer des données*
+* **read** *Permet de lire des données*
+* **write** *Permet d'écrire des données*
+* **isLogged** *Permet de s'avoir si il est enregistré*
 
 
 <br>
