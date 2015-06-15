@@ -8,17 +8,18 @@ define('URL', 'http://'. $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); // UR
 
 class Config{
     static public $config = [
-        'library' => [
+        'App' => [
             'name_site' => '', // Site name
             'description' => '', // Site description
+            'debug' => true,
         ],
-        'connections' => [
+        'Database' => [
             'mysql' => [
                 'driver' => 'mysql',
                 'host'   => 'localhost',
                 'name' => 'root',
-                'database' => '', // Database name table
-                'password' => '', // Database password
+                'database' => 'smartlib', // Database name table
+                'password' => 'root', // Database password
                 'charset' => 'utf-8',
                 'collation' => 'utf8_unicode_ci',
                 'prefix'    => '',
