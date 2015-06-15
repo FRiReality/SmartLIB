@@ -38,4 +38,11 @@ Class Utils{
         echo substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
     }
 
+    /**
+     * @param $string
+     */
+    function hash($string){
+        echo sha1($string + Config::$config['App']['salt']);
+    }
+
 }

@@ -22,6 +22,7 @@ $site = new Core\Utils();
     $site->tva('220.34');
     $site->linkCSS(URL, '');
     $site->linkJS(URL, '');
+    $site->hash($ma_variable);
 
 $log = new Core\Log();
     $log->write('Je test mon système de log','Salut.php');

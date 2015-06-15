@@ -17,6 +17,9 @@ class Bootstrap{
         return self::$_instance;
     }
 
+    /**
+     * Run SmartLIB
+     */
     public function run(){
         $inst = self::getInstance();
         include 'Configuration.php';
