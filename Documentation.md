@@ -5,7 +5,7 @@
 
 
 <br/>
-La class **Bootstrap** est la class "principal" de la **librairie**. 
+La class **Bootstrap** est la class "principal" de la **librairie**.
 ###*Les functions*###
 
 * **run** *Permet d'appeler la class Bootstrap et appeler le fichier **configuration.php***
@@ -25,22 +25,26 @@ Vous le s'avez tout comme moi, nous sommes obligé de debug notre site par momen
 
 <br>
 ## Class **Utils** ##
-Cette class c'est ou il y aura des functions utiles(troll) comme pour appeler des fichiers css/js.
+Cette class c'est ou il y aura des functions utiles comme pour appeler des fichiers css/js.
 
 ###*Les functions*###
 * ** linkCSS ** *Permet d'appeler un fichier css*
 * ** linkJS ** *Permet d'appeler un fichier js*
 * ** tva ** *Permet de calculer un prix avec la tva*
+* ** random ** *Permet de générer une clé unique(chiffre et lettre)*
 
 <br>
 ## Class **Database** ##
-Grâce à cette class vous aurez juste à mettre vos identifiants et vous pourrez dès à présent l'utiliser. 
+Grâce à cette class vous aurez juste à mettre vos identifiants et vous pourrez dès à présent l'utiliser.
 
 ### * Les functions * ###
 
 * **__construct** *Permet de vous connectez à votre base de donnée*
 * ** query** *Permet de récupérer et insérer des données*
 * ** delete ** *Permet de supprimer des données*
+* ** read ** *Permet de lire des données*
+* ** write ** *Permet d'écrire des données*
+* ** isLogged ** *Permet de s'avoir si il est enregistré*
 
 
 <br>
@@ -50,7 +54,7 @@ Grâce à cette class, nous pourrons passer des phrases ou autre entre des pages
 ### * Les functions * ###
 
 * **setFlash** *Permet de créer un message et de le mettre en session*
-* **write** *Permet de créer une session *
+* **write** *Permet de créer une session*
 * **read** *Permet de récupérer une session*
 * **isLogged** *Permet de vérifié si l'utilisateur est connecter ou non*
 
@@ -58,11 +62,11 @@ Grâce à cette class, nous pourrons passer des phrases ou autre entre des pages
 ## Class **Cache**
 La class **Cache** pour moi est vraiment indispensable pour les très gros site ou même les très grosse pages web.
 
-* **__construct** *Permet de créer le dossier pour le cache* 
-* **write** *Permet de créer un fichier et d'ajouter du contenu* 
+* **__construct** *Permet de créer le dossier pour le cache*
+* **write** *Permet de créer un fichier et d'ajouter du contenu*
 * **read** *Permet de lire un fichier*
 * **delete** *Permet de supprimer un fichier*  
-* **clear** *Permet de nettoyer le fichier(le vider)* 
+* **clear** *Permet de nettoyer le fichier(le vider)*
 * **inc** *Permet de capturer un fichier et de le mettre en cache puis affichier le cache*
 
 <br>
@@ -74,3 +78,8 @@ La class **Log** est très utile quand vous n'activez pas les erreurs quand votr
 <br>
 ## Class **Form** ##
 Cette class et avant tout une class qui nous facilite la tâche quand nous réalisons un formulaire.
+
+* **method** *Permet de choisir la méthode du formulaire*
+* **target** *Permet de choisir l'action du formulaire*
+* **target** *Permet de créer un input(type, name, label, style)*
+* **build**  *Permet de construire le formulaire*
