@@ -42,7 +42,7 @@ Class Utils{
      * @param $string
      */
     function hash($string){
-        echo sha1($string + Config::$config['App']['salt']);
+        echo sha1($string . Config::$config['App']['salt']);
     }
 
 }

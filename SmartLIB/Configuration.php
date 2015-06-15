@@ -12,7 +12,7 @@ class Config{
             'name_site' => '', // Site name
             'description' => '', // Site description
             'debug' => true,
-            'salt'  => 'Brandon16ans'
+            'salt'  => 'Brandon-xprodeur'
         ],
         'Database' => [
             'mysql' => [
