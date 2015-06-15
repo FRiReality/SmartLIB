@@ -6,6 +6,7 @@ SmartLIB est une librairie PHP très simple à installer. Grâce à cette librai
 ![https://htmlpreview.github.io/?https://github.com/brandon-xprodeur/SmartLIB/index.html](http://i.imgur.com/HFzaMPu.png)
 
 #**Documentation**#
+[Visualiser la documentation](https://github.com/brandon-xprodeur/SmartLIB/wiki)
 ___
 
 
