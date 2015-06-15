@@ -9,10 +9,21 @@ define('URL', 'http://'. $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']); // UR
 class Config{
     static public $config = [
         'App' => [
-            'name_site' => '', // Site name
-            'description' => '', // Site description
-            'debug' => true,
-            'salt'  => 'Brandon-xprodeur'
+            'name' => '', // Name of the Web site
+            'description' => '', // Description of the Web site
+            'debug' => true, // True = Display of the errors
+            'salt'  => '__SALT__', // String uniq for crypt
+
+            'Author' => [
+                'YourName' => [
+                    'first_name' => '',
+                    'name' => '',
+                    'age' => '',
+                    'job' => '',
+                    'birth' => '',
+                    'country' => ''
+                ]
+            ]
         ],
         'Database' => [
             'mysql' => [
