@@ -6,7 +6,6 @@
 
 <br/>
 La class **Bootstrap** est la class "principal" de la **librairie**.
-###*Les functions*###
 
 * **run** *Permet d'appeler la class Bootstrap et appeler le fichier **configuration.php***
 * **getInstance** *Permet d'avoir qu'une instance de la class*
@@ -15,8 +14,6 @@ La class **Bootstrap** est la class "principal" de la **librairie**.
 <br>
 ## Class **Debug** ##
 Vous le s'avez tout comme moi, nous sommes obligé de debug notre site par moment pour s'avoir/voir le fonctionnement d'un tableau ou encore de function... J'ai donc réalisé **3 functions** pour facilité le debug d'une d'une variable ou encore un tableau.
-
-###*Les functions*##
 
 * **session** *Permet de mettre votre debug en session*
 * **pp** *Permet de faire un print_r*
@@ -27,7 +24,6 @@ Vous le s'avez tout comme moi, nous sommes obligé de debug notre site par momen
 ## Class **Utils** ##
 Cette class c'est ou il y aura des functions utiles comme pour appeler des fichiers css/js.
 
-###*Les functions*###
 * ** linkCSS ** *Permet d'appeler un fichier css*
 * ** linkJS ** *Permet d'appeler un fichier js*
 * ** tva ** *Permet de calculer un prix avec la tva*
@@ -36,8 +32,6 @@ Cette class c'est ou il y aura des functions utiles comme pour appeler des fichi
 <br>
 ## Class **Database** ##
 Grâce à cette class vous aurez juste à mettre vos identifiants et vous pourrez dès à présent l'utiliser.
-
-### * Les functions * ###
 
 * **__construct** *Permet de vous connectez à votre base de donnée*
 * ** query** *Permet de récupérer et insérer des données*
@@ -50,8 +44,6 @@ Grâce à cette class vous aurez juste à mettre vos identifiants et vous pourre
 <br>
 ## Class **Session** ##
 Grâce à cette class, nous pourrons passer des phrases ou autre entre des pages.
-
-### * Les functions * ###
 
 * **setFlash** *Permet de créer un message et de le mettre en session*
 * **write** *Permet de créer une session*
