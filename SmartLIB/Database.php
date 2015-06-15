@@ -54,4 +54,8 @@ class Database{
     public function delete($sql){
         $req = $this->db->query($sql);
     }
+
+    public function lastInsertId(){
+        return $this->pdo->lastInsertId();
+    }
 }
